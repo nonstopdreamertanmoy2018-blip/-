@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        var nativeDefineProperty = Object.defineProperty;
+        function makeSafeFetchDescriptor(win, descriptor) {
+          if (!descriptor || typeof descriptor !== 'object') return descriptor;
+          if (typeof descriptor.get === 'function' && typeof descriptor.set !== 'function') {
+            var originalGetter = descriptor.get;
+            var overrideFn = null;
+            return {
+              configurable: true,
+              enumerable: descriptor.enumerable !== false,
+              get: function () {
+                if (typeof overrideFn === 'function') return overrideFn;
+                var resolved = originalGetter.call(this || win);
+                return typeof resolved === 'function' ? resolved.bind(win) : resolved;
+              },
+              set: function (nextFn) {
+                if (typeof nextFn === 'function') {
+                  overrideFn = function () {
+                    return nextFn.apply(win, arguments);
+                  };
+                }
+              }
+            };
+          }
+          if ('value' in descriptor && descriptor.writable === false) {
+            return {
+              configurable: true,
+              enumerable: descriptor.enumerable !== false,
+              writable: true,
+              value: typeof descriptor.value === 'function' ? descriptor.value.bind(win) : descriptor.value
+            };
+          }
+          return descriptor;
+        }
+        function patchFetchTarget(target, win) {
+          if (!target) return;
+          try {
+            var desc = Object.getOwnPropertyDescriptor(target, 'fetch');
+            if (
+              desc &&
+              desc.configurable !== false &&
+              ((typeof desc.get === 'function' && typeof desc.set !== 'function') ||
+                ('value' in desc && desc.writable === false))
+            ) {
+              nativeDefineProperty.call(Object, target, 'fetch', makeSafeFetchDescriptor(win, desc));
+            }
+          } catch (_) {}
+        }
+        try {
+          Object.defineProperty = function (target, prop, descriptor) {
+            if (
+              prop === 'fetch' &&
+              (target === window ||
+                target === globalThis ||
+                (typeof Window !== 'undefined' && target === Window.prototype))
+            ) {
+              return nativeDefineProperty.call(Object, target, prop, makeSafeFetchDescriptor(window, descriptor));
+            }
+            return nativeDefineProperty.call(Object, target, prop, descriptor);
+          };
+        } catch (_) {}
+        patchFetchTarget(window, window);
+        if (typeof Window !== 'undefined' && Window.prototype) {
+          patchFetchTarget(Window.prototype, window);
+        }
+        function isExtensionFetchError(message, filename, stack) {
+          var msg = String(message || '');
+          var file = String(filename || '');
+          var stk = String(stack || '');
+          var fromExt =
+            file.indexOf('chrome-extension://') === 0 ||
+            file.indexOf('moz-extension://') === 0 ||
+            file.indexOf('safari-web-extension://') === 0 ||
+            stk.indexOf('chrome-extension://') !== -1 ||
+            stk.indexOf('moz-extension://') !== -1;
+          var isGetterErr =
+            msg.indexOf('Cannot set property fetch') !== -1 ||
+            (msg.indexOf('fetch') !== -1 && msg.indexOf('only a getter') !== -1);
+          return fromExt || isGetterErr;
+        }
+        window.addEventListener(
+          'error',
+          function (event) {
+            if (
+              isExtensionFetchError(
+                event && event.message,
+                event && event.filename,
+                event && event.error && event.error.stack
+              )
+            ) {
+              event.stopImmediatePropagation();
+              event.preventDefault();
+            }
+          },
+          true
+        );
+        window.addEventListener(
+          'unhandledrejection',
+          function (event) {
+            var reason = event && event.reason;
+            if (
+              isExtensionFetchError(
+                reason && (reason.message || String(reason)),
+                '',
+                reason && reason.stack
+              )
+            ) {
+              event.stopImmediatePropagation();
+              event.preventDefault();
+            }
+          },
+          true
+        );
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Next Generation Company Limited ERP</title>
+    <meta
+      name="description"
+      content="Bilingual (Bangla/English) ERP Foundation & Double-Entry Accounting Suite with Role Permission Matrix, Journal Approvals, General Ledger, Verified Trial Balance, and Printable Commercial Templates."
+    />
+    <meta property="og:title" content="Next Generation Company Limited ERP" />
+    <meta
+      property="og:description"
+      content="Bilingual (Bangla/English) ERP Foundation & Double-Entry Accounting Suite with Role Permission Matrix, Journal Approvals, General Ledger, Verified Trial Balance, and Printable Commercial Templates."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&family=Public+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-slate-900 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

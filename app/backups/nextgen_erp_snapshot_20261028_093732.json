@@ -1,0 +1,545 @@
+{
+  "checksum_sha256": "6b033d7f868ddb21c348ba0e335c7e2e2f04aa6e2eecc527217d8c71e1e79213",
+  "data": {
+    "schema_version": "0002_attendance_payroll_backup",
+    "exported_at": "2026-10-28T09:37:32.534442+00:00",
+    "company_profile": {
+      "name_en": "Next Generation Company Limited",
+      "name_bn": "নেক্সট জেনারেশন কোম্পানি লিমিটেড",
+      "tagline_en": "Payroll, Attendance, Payments & Enterprise Accounting",
+      "tagline_bn": "বেতন, উপস্থিতি, পেমেন্ট ও এন্টারপ্রাইজ হিসাবরক্ষণ",
+      "logo_url": "/company-logo.jpg",
+      "banner_url": "/company-hq.jpg",
+      "registration_no": "C-000000/2026 (DEMO)",
+      "tin_no": "000-000-0000 (DEMO)",
+      "bin_no": "000000000-0000 (DEMO)",
+      "address_en": "Level 9, Plot 42 (Synthetic Demo Tower), Gulshan Avenue, Dhaka-1212, Bangladesh",
+      "address_bn": "লেভেল ৯, প্লট ৪২ (সিনথেটিক ডেমো টাওয়ার), গুলশান অ্যাভিনিউ, ঢাকা-১২১২, বাংলাদেশ",
+      "phone": "+880 2-0000-0000",
+      "email": "info@nextgen-demo.example",
+      "website": "https://nextgen-demo.example",
+      "currency": "BDT",
+      "fiscal_year_start_month": 7
+    },
+    "role_permissions": [
+      {
+        "role": "admin",
+        "permission_key": "users:manage",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "permissions:manage",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "company:manage",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "backup:manage",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "hr:view",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "hr:manage",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "payroll:manage",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "accounts:view",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "accounts:manage",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "journals:view",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "journals:create",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "journals:approve",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "reports:view",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "documents:view",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "documents:create",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "projects:view",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "users:manage",
+        "allowed": false
+      },
+      {
+        "role": "accountant",
+        "permission_key": "permissions:manage",
+        "allowed": false
+      },
+      {
+        "role": "accountant",
+        "permission_key": "company:manage",
+        "allowed": false
+      },
+      {
+        "role": "accountant",
+        "permission_key": "backup:manage",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "hr:view",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "hr:manage",
+        "allowed": false
+      },
+      {
+        "role": "accountant",
+        "permission_key": "payroll:manage",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "accounts:view",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "accounts:manage",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "journals:view",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "journals:create",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "journals:approve",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "reports:view",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "documents:view",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "documents:create",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "projects:view",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "users:manage",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "permissions:manage",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "company:manage",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "backup:manage",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "hr:view",
+        "allowed": true
+      },
+      {
+        "role": "hr",
+        "permission_key": "hr:manage",
+        "allowed": true
+      },
+      {
+        "role": "hr",
+        "permission_key": "payroll:manage",
+        "allowed": true
+      },
+      {
+        "role": "hr",
+        "permission_key": "accounts:view",
+        "allowed": true
+      },
+      {
+        "role": "hr",
+        "permission_key": "accounts:manage",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "journals:view",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "journals:create",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "journals:approve",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "reports:view",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "documents:view",
+        "allowed": true
+      },
+      {
+        "role": "hr",
+        "permission_key": "documents:create",
+        "allowed": true
+      },
+      {
+        "role": "hr",
+        "permission_key": "projects:view",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "users:manage",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "permissions:manage",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "company:manage",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "backup:manage",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "hr:view",
+        "allowed": true
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "hr:manage",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "payroll:manage",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "accounts:view",
+        "allowed": true
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "accounts:manage",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "journals:view",
+        "allowed": true
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "journals:create",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "journals:approve",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "reports:view",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "documents:view",
+        "allowed": true
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "documents:create",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "projects:view",
+        "allowed": true
+      },
+      {
+        "role": "sales",
+        "permission_key": "users:manage",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "permissions:manage",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "company:manage",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "backup:manage",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "hr:view",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "hr:manage",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "payroll:manage",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "accounts:view",
+        "allowed": true
+      },
+      {
+        "role": "sales",
+        "permission_key": "accounts:manage",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "journals:view",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "journals:create",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "journals:approve",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "reports:view",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "documents:view",
+        "allowed": true
+      },
+      {
+        "role": "sales",
+        "permission_key": "documents:create",
+        "allowed": true
+      },
+      {
+        "role": "sales",
+        "permission_key": "projects:view",
+        "allowed": true
+      },
+      {
+        "role": "employee",
+        "permission_key": "users:manage",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "permissions:manage",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "company:manage",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "backup:manage",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "hr:view",
+        "allowed": true
+      },
+      {
+        "role": "employee",
+        "permission_key": "hr:manage",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "payroll:manage",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "accounts:view",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "accounts:manage",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "journals:view",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "journals:create",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "journals:approve",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "reports:view",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "documents:view",
+        "allowed": true
+      },
+      {
+        "role": "employee",
+        "permission_key": "documents:create",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "projects:view",
+        "allowed": false
+      }
+    ],
+    "fiscal_periods": [
+      {
+        "id": 1,
+        "name": "FY 2026-2027 (Jul 2026 – Jun 2027)",
+        "start_date": "2026-07-01",
+        "end_date": "2027-06-30",
+        "is_closed": false
+      },
+      {
+        "id": 2,
+        "name": "FY 2025-2026 (Jan 2026 – Jun 2026)",
+        "start_date": "2026-01-01",
+        "end_date": "2026-06-30",
+        "is_closed": false
+      }
+    ],
+    "accounts": [
+      {
+        "id": 1,
+        "code": "1050",
+        "name_en": "Backup Cash",
+        "name_bn": "",
+        "account_type": "asset",
+        "normal_balance": "debit",
+        "parent_code": null,
+        "description_en": "",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": false,
+        "is_active": true
+      }
+    ],
+    "employees": [],
+    "attendance_records": [],
+    "journal_entries": [],
+    "salary_payments": [],
+    "business_documents": []
+  }
+}

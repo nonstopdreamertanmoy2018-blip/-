@@ -1,0 +1,1717 @@
+{
+  "checksum_sha256": "80bdc3b3256243c6c5a291215b1549a332ca5e02d55b5fa17d1e56a58678c9cf",
+  "data": {
+    "schema_version": "0002_attendance_payroll_backup",
+    "exported_at": "2026-10-28T07:52:14.963723+00:00",
+    "company_profile": {
+      "name_en": "Next Generation Company Limited",
+      "name_bn": "নেক্সট জেনারেশন কোম্পানি লিমিটেড",
+      "tagline_en": "Payroll, Attendance, Payments & Enterprise Accounting",
+      "tagline_bn": "বেতন, উপস্থিতি, পেমেন্ট ও এন্টারপ্রাইজ হিসাবরক্ষণ",
+      "logo_url": "/company-logo.jpg",
+      "banner_url": "/company-hq.jpg",
+      "registration_no": "C-000000/2026 (DEMO)",
+      "tin_no": "000-000-0000 (DEMO)",
+      "bin_no": "000000000-0000 (DEMO)",
+      "address_en": "Level 9, Plot 42 (Synthetic Demo Tower), Gulshan Avenue, Dhaka-1212, Bangladesh",
+      "address_bn": "লেভেল ৯, প্লট ৪২ (সিনথেটিক ডেমো টাওয়ার), গুলশান অ্যাভিনিউ, ঢাকা-১২১২, বাংলাদেশ",
+      "phone": "+880 2-0000-0000",
+      "email": "info@nextgen-demo.example",
+      "website": "https://nextgen-demo.example",
+      "currency": "BDT",
+      "fiscal_year_start_month": 7
+    },
+    "role_permissions": [
+      {
+        "role": "admin",
+        "permission_key": "users:manage",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "permissions:manage",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "company:manage",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "backup:manage",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "hr:view",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "hr:manage",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "payroll:manage",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "accounts:view",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "accounts:manage",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "journals:view",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "journals:create",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "journals:approve",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "reports:view",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "documents:view",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "documents:create",
+        "allowed": true
+      },
+      {
+        "role": "admin",
+        "permission_key": "projects:view",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "users:manage",
+        "allowed": false
+      },
+      {
+        "role": "accountant",
+        "permission_key": "permissions:manage",
+        "allowed": false
+      },
+      {
+        "role": "accountant",
+        "permission_key": "company:manage",
+        "allowed": false
+      },
+      {
+        "role": "accountant",
+        "permission_key": "backup:manage",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "hr:view",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "hr:manage",
+        "allowed": false
+      },
+      {
+        "role": "accountant",
+        "permission_key": "payroll:manage",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "accounts:view",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "accounts:manage",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "journals:view",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "journals:create",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "journals:approve",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "reports:view",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "documents:view",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "documents:create",
+        "allowed": true
+      },
+      {
+        "role": "accountant",
+        "permission_key": "projects:view",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "users:manage",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "permissions:manage",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "company:manage",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "backup:manage",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "hr:view",
+        "allowed": true
+      },
+      {
+        "role": "hr",
+        "permission_key": "hr:manage",
+        "allowed": true
+      },
+      {
+        "role": "hr",
+        "permission_key": "payroll:manage",
+        "allowed": true
+      },
+      {
+        "role": "hr",
+        "permission_key": "accounts:view",
+        "allowed": true
+      },
+      {
+        "role": "hr",
+        "permission_key": "accounts:manage",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "journals:view",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "journals:create",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "journals:approve",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "reports:view",
+        "allowed": false
+      },
+      {
+        "role": "hr",
+        "permission_key": "documents:view",
+        "allowed": true
+      },
+      {
+        "role": "hr",
+        "permission_key": "documents:create",
+        "allowed": true
+      },
+      {
+        "role": "hr",
+        "permission_key": "projects:view",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "users:manage",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "permissions:manage",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "company:manage",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "backup:manage",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "hr:view",
+        "allowed": true
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "hr:manage",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "payroll:manage",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "accounts:view",
+        "allowed": true
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "accounts:manage",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "journals:view",
+        "allowed": true
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "journals:create",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "journals:approve",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "reports:view",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "documents:view",
+        "allowed": true
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "documents:create",
+        "allowed": false
+      },
+      {
+        "role": "project_manager",
+        "permission_key": "projects:view",
+        "allowed": true
+      },
+      {
+        "role": "sales",
+        "permission_key": "users:manage",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "permissions:manage",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "company:manage",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "backup:manage",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "hr:view",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "hr:manage",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "payroll:manage",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "accounts:view",
+        "allowed": true
+      },
+      {
+        "role": "sales",
+        "permission_key": "accounts:manage",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "journals:view",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "journals:create",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "journals:approve",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "reports:view",
+        "allowed": false
+      },
+      {
+        "role": "sales",
+        "permission_key": "documents:view",
+        "allowed": true
+      },
+      {
+        "role": "sales",
+        "permission_key": "documents:create",
+        "allowed": true
+      },
+      {
+        "role": "sales",
+        "permission_key": "projects:view",
+        "allowed": true
+      },
+      {
+        "role": "employee",
+        "permission_key": "users:manage",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "permissions:manage",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "company:manage",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "backup:manage",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "hr:view",
+        "allowed": true
+      },
+      {
+        "role": "employee",
+        "permission_key": "hr:manage",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "payroll:manage",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "accounts:view",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "accounts:manage",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "journals:view",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "journals:create",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "journals:approve",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "reports:view",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "documents:view",
+        "allowed": true
+      },
+      {
+        "role": "employee",
+        "permission_key": "documents:create",
+        "allowed": false
+      },
+      {
+        "role": "employee",
+        "permission_key": "projects:view",
+        "allowed": false
+      }
+    ],
+    "fiscal_periods": [
+      {
+        "id": 1,
+        "name": "FY 2026-2027 (Jul 2026 – Jun 2027)",
+        "start_date": "2026-07-01",
+        "end_date": "2027-06-30",
+        "is_closed": false
+      },
+      {
+        "id": 2,
+        "name": "FY 2025-2026 (Jan 2026 – Jun 2026)",
+        "start_date": "2026-01-01",
+        "end_date": "2026-06-30",
+        "is_closed": false
+      }
+    ],
+    "accounts": [
+      {
+        "id": 1,
+        "code": "1010",
+        "name_en": "Petty Cash in Hand",
+        "name_bn": "হাতে খুচরা নগদ",
+        "account_type": "asset",
+        "normal_balance": "debit",
+        "parent_code": null,
+        "description_en": "Dhaka office petty cash float",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      },
+      {
+        "id": 2,
+        "code": "1020",
+        "name_en": "Operating Bank Account (BDT)",
+        "name_bn": "চলতি ব্যাংক হিসাব (বিডিটি)",
+        "account_type": "asset",
+        "normal_balance": "debit",
+        "parent_code": null,
+        "description_en": "Primary corporate operating bank account",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      },
+      {
+        "id": 3,
+        "code": "1100",
+        "name_en": "Accounts Receivable — Clients",
+        "name_bn": "প্রাপ্য হিসাব — গ্রাহকবৃন্দ",
+        "account_type": "asset",
+        "normal_balance": "debit",
+        "parent_code": null,
+        "description_en": "Billed software development & AMC receivables",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      },
+      {
+        "id": 4,
+        "code": "1200",
+        "name_en": "Staff Salary Advance & Deposits",
+        "name_bn": "কর্মী অগ্রিম ও নিরাপত্তা জমা",
+        "account_type": "asset",
+        "normal_balance": "debit",
+        "parent_code": null,
+        "description_en": "Employee advances & office deposits",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      },
+      {
+        "id": 5,
+        "code": "1500",
+        "name_en": "Server & Workstation Hardware",
+        "name_bn": "সার্ভার ও কম্পিউটার সরঞ্জাম",
+        "account_type": "asset",
+        "normal_balance": "debit",
+        "parent_code": null,
+        "description_en": "Development laptops and test rack hardware",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      },
+      {
+        "id": 6,
+        "code": "2010",
+        "name_en": "Accounts Payable — Vendors",
+        "name_bn": "প্রদেয় হিসাব — সরবরাহকারী",
+        "account_type": "liability",
+        "normal_balance": "credit",
+        "parent_code": null,
+        "description_en": "Supplier and hosting invoices payable",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      },
+      {
+        "id": 7,
+        "code": "2100",
+        "name_en": "Unearned AMC & Retainer Revenue",
+        "name_bn": "অনুপার্জিত রক্ষণাবেক্ষণ আয়",
+        "account_type": "liability",
+        "normal_balance": "credit",
+        "parent_code": null,
+        "description_en": "Advance client retainers pending service delivery",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      },
+      {
+        "id": 8,
+        "code": "2200",
+        "name_en": "Accrued Salaries & Statutory Payable",
+        "name_bn": "বকেয়া বেতন ও বিধিবদ্ধ প্রদেয়",
+        "account_type": "liability",
+        "normal_balance": "credit",
+        "parent_code": null,
+        "description_en": "Monthly payroll obligations",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      },
+      {
+        "id": 9,
+        "code": "3010",
+        "name_en": "Paid-Up Share Capital",
+        "name_bn": "পরিশোধিত শেয়ার মূলধন",
+        "account_type": "equity",
+        "normal_balance": "credit",
+        "parent_code": null,
+        "description_en": "Authorized synthetic founder capital",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      },
+      {
+        "id": 10,
+        "code": "3020",
+        "name_en": "Retained Earnings",
+        "name_bn": "সংরক্ষিত আয়",
+        "account_type": "equity",
+        "normal_balance": "credit",
+        "parent_code": null,
+        "description_en": "Accumulated net surplus/deficit",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      },
+      {
+        "id": 11,
+        "code": "4010",
+        "name_en": "Custom Software Engineering Revenue",
+        "name_bn": "কাস্টম সফটওয়্যার উন্নয়ন আয়",
+        "account_type": "revenue",
+        "normal_balance": "credit",
+        "parent_code": null,
+        "description_en": "Milestone billing for custom ERP and web platforms",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      },
+      {
+        "id": 12,
+        "code": "4020",
+        "name_en": "Cloud Hosting & AMC Support Revenue",
+        "name_bn": "ক্লাউড ও বার্ষিক রক্ষণাবেক্ষণ আয়",
+        "account_type": "revenue",
+        "normal_balance": "credit",
+        "parent_code": null,
+        "description_en": "Recurring SLA and DevOps support fees",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      },
+      {
+        "id": 13,
+        "code": "5010",
+        "name_en": "Staff Salaries & Allowances",
+        "name_bn": "কর্মকর্তা ও কর্মচারীদের বেতন-ভাতা",
+        "account_type": "expense",
+        "normal_balance": "debit",
+        "parent_code": null,
+        "description_en": "Monthly staff salary, allowances, and overtime",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      },
+      {
+        "id": 14,
+        "code": "5020",
+        "name_en": "Dhaka Office Rent & Utilities",
+        "name_bn": "ঢাকা অফিস ভাড়া ও উপযোগ খরচ",
+        "account_type": "expense",
+        "normal_balance": "debit",
+        "parent_code": null,
+        "description_en": "Office lease, electricity, and fiber internet",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      },
+      {
+        "id": 15,
+        "code": "5030",
+        "name_en": "Cloud Infrastructure & DevOps Cost",
+        "name_bn": "ক্লাউড অবকাঠামো ও ডেভঅপস ব্যয়",
+        "account_type": "expense",
+        "normal_balance": "debit",
+        "parent_code": null,
+        "description_en": "Production cluster, CI/CD, and backup storage",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      },
+      {
+        "id": 16,
+        "code": "5040",
+        "name_en": "Printing, Stationery & Conveyance",
+        "name_bn": "মুদ্রণ, স্টেশনারি ও যাতায়াত ব্যয়",
+        "account_type": "expense",
+        "normal_balance": "debit",
+        "parent_code": null,
+        "description_en": "Office supplies, conveyance, and documentation",
+        "description_bn": "",
+        "opening_debit": "0.00",
+        "opening_credit": "0.00",
+        "is_system": true,
+        "is_active": true
+      }
+    ],
+    "employees": [
+      {
+        "id": 1,
+        "emp_code": "EMP-001",
+        "full_name_en": "Tanvir Ahmed",
+        "full_name_bn": "তানভীর আহমেদ",
+        "designation_en": "Lead Project Manager",
+        "designation_bn": "লিড প্রজেক্ট ম্যানেজার",
+        "department": "Engineering",
+        "phone": "+880 1700-000001",
+        "email": "emp-001@nextgen-demo.example",
+        "join_date": "2025-07-01",
+        "basic_salary": "45000.00",
+        "house_rent": "20000.00",
+        "medical_allowance": "5000.00",
+        "transport_allowance": "5000.00",
+        "payment_method_pref": "Bank Transfer",
+        "bank_account_no": "SB-DEMO-1001",
+        "is_active": true
+      },
+      {
+        "id": 2,
+        "emp_code": "EMP-002",
+        "full_name_en": "Rahim Uddin",
+        "full_name_bn": "রহিম উদ্দিন",
+        "designation_en": "Senior Accountant",
+        "designation_bn": "সিনিয়র হিসাবরক্ষক",
+        "department": "Finance & Accounts",
+        "phone": "+880 1700-000002",
+        "email": "emp-002@nextgen-demo.example",
+        "join_date": "2025-08-01",
+        "basic_salary": "36000.00",
+        "house_rent": "16000.00",
+        "medical_allowance": "4000.00",
+        "transport_allowance": "4000.00",
+        "payment_method_pref": "Bank Transfer",
+        "bank_account_no": "SB-DEMO-1002",
+        "is_active": true
+      },
+      {
+        "id": 3,
+        "emp_code": "EMP-003",
+        "full_name_en": "Nusrat Jahan",
+        "full_name_bn": "নুসরাত জাহান",
+        "designation_en": "HR & Admin Specialist",
+        "designation_bn": "মানবসম্পদ ও প্রশাসন কর্মকর্তা",
+        "department": "HR & Administration",
+        "phone": "+880 1700-000003",
+        "email": "emp-003@nextgen-demo.example",
+        "join_date": "2025-09-15",
+        "basic_salary": "30000.00",
+        "house_rent": "14000.00",
+        "medical_allowance": "3500.00",
+        "transport_allowance": "3500.00",
+        "payment_method_pref": "Bank Transfer",
+        "bank_account_no": "SB-DEMO-1003",
+        "is_active": true
+      },
+      {
+        "id": 4,
+        "emp_code": "EMP-004",
+        "full_name_en": "Kamal Hossain",
+        "full_name_bn": "কামাল হোসেন",
+        "designation_en": "Full-Stack Software Engineer",
+        "designation_bn": "ফুল-স্ট্যাক সফটওয়্যার প্রকৌশলী",
+        "department": "Engineering",
+        "phone": "+880 1700-000004",
+        "email": "emp-004@nextgen-demo.example",
+        "join_date": "2026-01-10",
+        "basic_salary": "34000.00",
+        "house_rent": "15000.00",
+        "medical_allowance": "3500.00",
+        "transport_allowance": "3500.00",
+        "payment_method_pref": "Bank Transfer",
+        "bank_account_no": "SB-DEMO-1004",
+        "is_active": true
+      },
+      {
+        "id": 5,
+        "emp_code": "EMP-005",
+        "full_name_en": "Farhana Karim",
+        "full_name_bn": "ফারহানা করিম",
+        "designation_en": "Corporate Sales Executive",
+        "designation_bn": "কর্পোরেট বিক্রয় কর্মকর্তা",
+        "department": "Sales & Growth",
+        "phone": "+880 1700-000005",
+        "email": "emp-005@nextgen-demo.example",
+        "join_date": "2026-02-01",
+        "basic_salary": "28000.00",
+        "house_rent": "12000.00",
+        "medical_allowance": "3000.00",
+        "transport_allowance": "3000.00",
+        "payment_method_pref": "bKash Corporate",
+        "bank_account_no": "BKASH-DEMO-05",
+        "is_active": true
+      },
+      {
+        "id": 6,
+        "emp_code": "EMP-006",
+        "full_name_en": "Arifur Rahman",
+        "full_name_bn": "আরিফুর রহমান",
+        "designation_en": "Office Support & Dispatch Coordinator",
+        "designation_bn": "অফিস সহায়তা ও ডিসপ্যাচ সমন্বয়ক",
+        "department": "Administration",
+        "phone": "+880 1700-000006",
+        "email": "emp-006@nextgen-demo.example",
+        "join_date": "2026-03-01",
+        "basic_salary": "16000.00",
+        "house_rent": "7000.00",
+        "medical_allowance": "2000.00",
+        "transport_allowance": "2000.00",
+        "payment_method_pref": "Cash",
+        "bank_account_no": "CASH-PAYROLL",
+        "is_active": true
+      }
+    ],
+    "attendance_records": [
+      {
+        "employee_id": 1,
+        "attendance_date": "2026-10-22",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 2,
+        "attendance_date": "2026-10-22",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 3,
+        "attendance_date": "2026-10-22",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 4,
+        "attendance_date": "2026-10-22",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 5,
+        "attendance_date": "2026-10-22",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 6,
+        "attendance_date": "2026-10-22",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 1,
+        "attendance_date": "2026-10-24",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 2,
+        "attendance_date": "2026-10-24",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 3,
+        "attendance_date": "2026-10-24",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 4,
+        "attendance_date": "2026-10-24",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 5,
+        "attendance_date": "2026-10-24",
+        "status": "leave",
+        "check_in": "--:--",
+        "check_out": "--:--",
+        "overtime_hours": "0.00",
+        "note": "Approved casual leave"
+      },
+      {
+        "employee_id": 6,
+        "attendance_date": "2026-10-24",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 1,
+        "attendance_date": "2026-10-25",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 2,
+        "attendance_date": "2026-10-25",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 3,
+        "attendance_date": "2026-10-25",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 4,
+        "attendance_date": "2026-10-25",
+        "status": "late",
+        "check_in": "09:42",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": "Traffic delay"
+      },
+      {
+        "employee_id": 5,
+        "attendance_date": "2026-10-25",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 6,
+        "attendance_date": "2026-10-25",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 1,
+        "attendance_date": "2026-10-26",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 2,
+        "attendance_date": "2026-10-26",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 3,
+        "attendance_date": "2026-10-26",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 4,
+        "attendance_date": "2026-10-26",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 5,
+        "attendance_date": "2026-10-26",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 6,
+        "attendance_date": "2026-10-26",
+        "status": "absent",
+        "check_in": "--:--",
+        "check_out": "--:--",
+        "overtime_hours": "0.00",
+        "note": "Uninformed absence"
+      },
+      {
+        "employee_id": 1,
+        "attendance_date": "2026-10-27",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 2,
+        "attendance_date": "2026-10-27",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 3,
+        "attendance_date": "2026-10-27",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 4,
+        "attendance_date": "2026-10-27",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 5,
+        "attendance_date": "2026-10-27",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 6,
+        "attendance_date": "2026-10-27",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 1,
+        "attendance_date": "2026-10-28",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 2,
+        "attendance_date": "2026-10-28",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 3,
+        "attendance_date": "2026-10-28",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 4,
+        "attendance_date": "2026-10-28",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "21:00",
+        "overtime_hours": "3.00",
+        "note": "Release deployment overtime"
+      },
+      {
+        "employee_id": 5,
+        "attendance_date": "2026-10-28",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      },
+      {
+        "employee_id": 6,
+        "attendance_date": "2026-10-28",
+        "status": "present",
+        "check_in": "09:00",
+        "check_out": "18:05",
+        "overtime_hours": "0.00",
+        "note": ""
+      }
+    ],
+    "journal_entries": [
+      {
+        "id": 1,
+        "voucher_no": "JV-2026-0001",
+        "entry_date": "2026-10-01",
+        "memo": "Founder share capital deposited into Operating Bank & Workstation assets",
+        "reference": "CAP-2026-01",
+        "status": "posted",
+        "created_by": 2,
+        "lines": [
+          {
+            "account_id": 2,
+            "description": "Bank capital deposit",
+            "debit": "600000.00",
+            "credit": "0.00"
+          },
+          {
+            "account_id": 5,
+            "description": "Workstation & biometric attendance equipment",
+            "debit": "150000.00",
+            "credit": "0.00"
+          },
+          {
+            "account_id": 9,
+            "description": "Paid-up share capital issuance",
+            "debit": "0.00",
+            "credit": "750000.00"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "voucher_no": "JV-2026-0002",
+        "entry_date": "2026-10-04",
+        "memo": "Billed Meghna Logistics Ltd (Demo) for ERP Phase-1 Architecture Milestone",
+        "reference": "INV-2026-0001",
+        "status": "posted",
+        "created_by": 2,
+        "lines": [
+          {
+            "account_id": 3,
+            "description": "Client receivable INV-2026-0001",
+            "debit": "185000.00",
+            "credit": "0.00"
+          },
+          {
+            "account_id": 11,
+            "description": "ERP Phase-1 milestone delivery",
+            "debit": "0.00",
+            "credit": "185000.00"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "voucher_no": "JV-2026-0003",
+        "entry_date": "2026-10-08",
+        "memo": "Received RTGS bank settlement from Meghna Logistics Ltd against INV-2026-0001",
+        "reference": "MR-2026-0001",
+        "status": "posted",
+        "created_by": 2,
+        "lines": [
+          {
+            "account_id": 2,
+            "description": "RTGS bank settlement received",
+            "debit": "120000.00",
+            "credit": "0.00"
+          },
+          {
+            "account_id": 3,
+            "description": "Applied against INV-2026-0001",
+            "debit": "0.00",
+            "credit": "120000.00"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "voucher_no": "JV-2026-0004",
+        "entry_date": "2026-10-12",
+        "memo": "Paid October Gulshan office rent and redundant fiber connectivity",
+        "reference": "PV-2026-0001",
+        "status": "posted",
+        "created_by": 2,
+        "lines": [
+          {
+            "account_id": 14,
+            "description": "October office lease & dual-ISP fiber",
+            "debit": "65000.00",
+            "credit": "0.00"
+          },
+          {
+            "account_id": 2,
+            "description": "Paid via corporate bank transfer",
+            "debit": "0.00",
+            "credit": "65000.00"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "voucher_no": "JV-2026-0005",
+        "entry_date": "2026-10-18",
+        "memo": "Transferred petty cash float for Dhaka office conveyance & stationery",
+        "reference": "PC-2026-10",
+        "status": "posted",
+        "created_by": 2,
+        "lines": [
+          {
+            "account_id": 1,
+            "description": "Petty cash replenishment",
+            "debit": "35000.00",
+            "credit": "0.00"
+          },
+          {
+            "account_id": 2,
+            "description": "Cash withdrawal from operating bank",
+            "debit": "0.00",
+            "credit": "35000.00"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "voucher_no": "JV-2026-0006",
+        "entry_date": "2026-10-25",
+        "memo": "Accrued October cloud cluster hosting & managed PostgreSQL staging bill (Awaiting Approval)",
+        "reference": "VENDOR-CLOUD-10",
+        "status": "pending_approval",
+        "created_by": 2,
+        "lines": [
+          {
+            "account_id": 15,
+            "description": "October Kubernetes & staging DB hosting",
+            "debit": "28500.00",
+            "credit": "0.00"
+          },
+          {
+            "account_id": 6,
+            "description": "Payable to Bengal Cloud Host (Demo)",
+            "debit": "0.00",
+            "credit": "28500.00"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "voucher_no": "JV-2026-0007",
+        "entry_date": "2026-10-28",
+        "memo": "Salary Disbursement (2026-10) — Tanvir Ahmed (PAY-202610-001)",
+        "reference": "PAY-202610-001",
+        "status": "posted",
+        "created_by": 1,
+        "lines": [
+          {
+            "account_id": 13,
+            "description": "Salary 2026-10 EMP-001",
+            "debit": "80000.00",
+            "credit": "0.00"
+          },
+          {
+            "account_id": 2,
+            "description": "Salary bank transfer",
+            "debit": "0.00",
+            "credit": "80000.00"
+          }
+        ]
+      }
+    ],
+    "salary_payments": [
+      {
+        "id": 1,
+        "payslip_no": "PAY-202610-001",
+        "employee_id": 1,
+        "salary_month": "2026-10",
+        "payment_date": "2026-10-28",
+        "working_days": 26,
+        "present_days": 22,
+        "late_days": 0,
+        "half_days": 0,
+        "leave_days": 0,
+        "absent_days": 0,
+        "overtime_hours": "0.00",
+        "basic_salary": "45000.00",
+        "house_rent": "20000.00",
+        "medical_allowance": "5000.00",
+        "transport_allowance": "5000.00",
+        "gross_salary": "75000.00",
+        "overtime_pay": "0.00",
+        "bonus_amount": "5000.00",
+        "absent_deduction": "0.00",
+        "advance_deduction": "0.00",
+        "tax_deduction": "0.00",
+        "net_payable": "80000.00",
+        "payment_method": "Bank Transfer",
+        "status": "paid",
+        "linked_journal_id": 7,
+        "notes": "Performance milestone bonus included"
+      },
+      {
+        "id": 2,
+        "payslip_no": "PAY-202610-002",
+        "employee_id": 2,
+        "salary_month": "2026-10",
+        "payment_date": null,
+        "working_days": 26,
+        "present_days": 22,
+        "late_days": 0,
+        "half_days": 0,
+        "leave_days": 0,
+        "absent_days": 0,
+        "overtime_hours": "0.00",
+        "basic_salary": "36000.00",
+        "house_rent": "16000.00",
+        "medical_allowance": "4000.00",
+        "transport_allowance": "4000.00",
+        "gross_salary": "60000.00",
+        "overtime_pay": "0.00",
+        "bonus_amount": "0.00",
+        "absent_deduction": "0.00",
+        "advance_deduction": "0.00",
+        "tax_deduction": "0.00",
+        "net_payable": "60000.00",
+        "payment_method": "Bank Transfer",
+        "status": "pending",
+        "linked_journal_id": null,
+        "notes": ""
+      },
+      {
+        "id": 3,
+        "payslip_no": "PAY-202610-003",
+        "employee_id": 3,
+        "salary_month": "2026-10",
+        "payment_date": null,
+        "working_days": 26,
+        "present_days": 22,
+        "late_days": 0,
+        "half_days": 0,
+        "leave_days": 0,
+        "absent_days": 0,
+        "overtime_hours": "0.00",
+        "basic_salary": "30000.00",
+        "house_rent": "14000.00",
+        "medical_allowance": "3500.00",
+        "transport_allowance": "3500.00",
+        "gross_salary": "51000.00",
+        "overtime_pay": "0.00",
+        "bonus_amount": "0.00",
+        "absent_deduction": "0.00",
+        "advance_deduction": "0.00",
+        "tax_deduction": "0.00",
+        "net_payable": "51000.00",
+        "payment_method": "Bank Transfer",
+        "status": "pending",
+        "linked_journal_id": null,
+        "notes": ""
+      },
+      {
+        "id": 4,
+        "payslip_no": "PAY-202610-004",
+        "employee_id": 4,
+        "salary_month": "2026-10",
+        "payment_date": null,
+        "working_days": 26,
+        "present_days": 22,
+        "late_days": 1,
+        "half_days": 0,
+        "leave_days": 0,
+        "absent_days": 0,
+        "overtime_hours": "3.00",
+        "basic_salary": "34000.00",
+        "house_rent": "15000.00",
+        "medical_allowance": "3500.00",
+        "transport_allowance": "3500.00",
+        "gross_salary": "56000.00",
+        "overtime_pay": "735.58",
+        "bonus_amount": "0.00",
+        "absent_deduction": "0.00",
+        "advance_deduction": "0.00",
+        "tax_deduction": "0.00",
+        "net_payable": "56735.58",
+        "payment_method": "Bank Transfer",
+        "status": "pending",
+        "linked_journal_id": null,
+        "notes": ""
+      },
+      {
+        "id": 5,
+        "payslip_no": "PAY-202610-005",
+        "employee_id": 5,
+        "salary_month": "2026-10",
+        "payment_date": null,
+        "working_days": 26,
+        "present_days": 21,
+        "late_days": 0,
+        "half_days": 0,
+        "leave_days": 1,
+        "absent_days": 0,
+        "overtime_hours": "0.00",
+        "basic_salary": "28000.00",
+        "house_rent": "12000.00",
+        "medical_allowance": "3000.00",
+        "transport_allowance": "3000.00",
+        "gross_salary": "46000.00",
+        "overtime_pay": "0.00",
+        "bonus_amount": "0.00",
+        "absent_deduction": "0.00",
+        "advance_deduction": "0.00",
+        "tax_deduction": "0.00",
+        "net_payable": "46000.00",
+        "payment_method": "bKash Corporate",
+        "status": "pending",
+        "linked_journal_id": null,
+        "notes": ""
+      },
+      {
+        "id": 6,
+        "payslip_no": "PAY-202610-006",
+        "employee_id": 6,
+        "salary_month": "2026-10",
+        "payment_date": null,
+        "working_days": 26,
+        "present_days": 21,
+        "late_days": 0,
+        "half_days": 0,
+        "leave_days": 0,
+        "absent_days": 1,
+        "overtime_hours": "0.00",
+        "basic_salary": "16000.00",
+        "house_rent": "7000.00",
+        "medical_allowance": "2000.00",
+        "transport_allowance": "2000.00",
+        "gross_salary": "27000.00",
+        "overtime_pay": "0.00",
+        "bonus_amount": "0.00",
+        "absent_deduction": "533.33",
+        "advance_deduction": "0.00",
+        "tax_deduction": "0.00",
+        "net_payable": "26466.67",
+        "payment_method": "Cash",
+        "status": "pending",
+        "linked_journal_id": null,
+        "notes": ""
+      }
+    ],
+    "business_documents": [
+      {
+        "id": 1,
+        "doc_type": "letterhead",
+        "doc_number": "LH-2026-0001",
+        "issue_date": "2026-10-20",
+        "due_date": null,
+        "party_name_en": "Director of Information Systems, Padma Textiles PLC (Synthetic Demo)",
+        "party_name_bn": "পরিচালক (তথ্যপ্রযুক্তি), পদ্মা টেক্সটাইলস পিএলসি (সিনথেটিক ডেমো)",
+        "party_address": "Plot 19, Tejgaon Industrial Area, Dhaka-1208",
+        "subject_en": "Project Kickoff Confirmation & Monthly Attendance-Payroll Integration",
+        "subject_bn": "প্রজেক্ট সূচনা নিশ্চিতকরণ ও উপস্থিতি-বেতন ইন্টিগ্রেশন প্রসঙ্গে",
+        "body_en": "Dear Sir/Madam,\n\nWe are pleased to confirm the formal commencement of the Enterprise Attendance, Payroll & Accounting engagement between Next Generation Company Limited and Padma Textiles PLC (Synthetic Demo).\n\nSincerely,\nManagement Office\nNext Generation Company Limited",
+        "body_bn": "মহোদয়,\n\nআনন্দের সাথে জানানো যাচ্ছে যে নেক্সট জেনারেশন কোম্পানি লিমিটেড এবং পদ্মা টেক্সটাইলস পিএলসি (সিনথেটিক ডেমো)-এর মধ্যে উপস্থিতি, পেরোল ও অ্যাকাউন্টিং প্রকল্পের আনুষ্ঠানিক কার্যক্রম শুরু হয়েছে।",
+        "payment_method": "N/A — Official Correspondence",
+        "currency": "BDT",
+        "discount_amount": "0.00",
+        "tax_rate_percent": "0.00",
+        "notes_en": "Synthetic demonstration record — not a valid tax document.",
+        "notes_bn": "সিনথেটিক ডেমো নথি — কর চালান বা প্রকৃত লেনদেন নয়।",
+        "status": "issued",
+        "items": []
+      },
+      {
+        "id": 2,
+        "doc_type": "payment_voucher",
+        "doc_number": "PV-2026-0001",
+        "issue_date": "2026-10-12",
+        "due_date": null,
+        "party_name_en": "Gulshan Commercial Properties Ltd (Synthetic Demo)",
+        "party_name_bn": "গুলশান কমার্শিয়াল প্রপার্টিজ লিমিটেড (সিনথেটিক ডেমো)",
+        "party_address": "Gulshan-2 Circle, Dhaka-1212",
+        "subject_en": "October 2026 Office Lease & Redundant Fiber Facility Settlement",
+        "subject_bn": "অক্টোবর ২০২৬ অফিস ভাড়া ও ফাইবার ইন্টারনেট বিল পরিশোধ",
+        "body_en": "",
+        "body_bn": "",
+        "payment_method": "Corporate Bank EFTN",
+        "currency": "BDT",
+        "discount_amount": "0.00",
+        "tax_rate_percent": "0.00",
+        "notes_en": "Synthetic demonstration record — not a valid tax document.",
+        "notes_bn": "সিনথেটিক ডেমো নথি — কর চালান বা প্রকৃত লেনদেন নয়।",
+        "status": "issued",
+        "items": [
+          {
+            "description_en": "Monthly Office Floor Lease — October 2026 (Demo)",
+            "description_bn": "মাসিক অফিস ফ্লোর ভাড়া — অক্টোবর ২০২৬ (ডেমো)",
+            "quantity": "1.00",
+            "unit_price": "55000.00",
+            "amount": "55000.00"
+          },
+          {
+            "description_en": "Dedicated Dual-ISP Fiber Connectivity & Backup Power",
+            "description_bn": "ডেডিকেটেড ডুয়াল-আইএসপি ফাইবার ও ব্যাকআপ পাওয়ার চার্জ",
+            "quantity": "1.00",
+            "unit_price": "10000.00",
+            "amount": "10000.00"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "doc_type": "receipt",
+        "doc_number": "MR-2026-0001",
+        "issue_date": "2026-10-08",
+        "due_date": null,
+        "party_name_en": "Meghna Logistics Ltd (Synthetic Demo)",
+        "party_name_bn": "মেঘনা লজিস্টিকস লিমিটেড (সিনথেটিক ডেমো)",
+        "party_address": "Banani Liaison Office, Dhaka",
+        "subject_en": "Partial Settlement Received Against Invoice INV-2026-0001",
+        "subject_bn": "ইনভয়েস INV-2026-0001 এর বিপরীতে আংশিক অর্থ প্রাপ্তি",
+        "body_en": "",
+        "body_bn": "",
+        "payment_method": "RTGS Bank Transfer (Ref: DEMO-RTGS-88412)",
+        "currency": "BDT",
+        "discount_amount": "0.00",
+        "tax_rate_percent": "0.00",
+        "notes_en": "Synthetic demonstration record — not a valid tax document.",
+        "notes_bn": "সিনথেটিক ডেমো নথি — কর চালান বা প্রকৃত লেনদেন নয়।",
+        "status": "issued",
+        "items": [
+          {
+            "description_en": "First Milestone Receipt — ERP Phase-1 Architecture (Against INV-2026-0001)",
+            "description_bn": "প্রথম মাইলস্টোন রসিদ — ইআরপি ফেজ-১ আর্কিটেকচার (INV-2026-0001)",
+            "quantity": "1.00",
+            "unit_price": "120000.00",
+            "amount": "120000.00"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "doc_type": "quotation",
+        "doc_number": "QT-2026-0001",
+        "issue_date": "2026-10-22",
+        "due_date": "2026-11-22",
+        "party_name_en": "Surma Healthcare Diagnostics Ltd (Synthetic Demo)",
+        "party_name_bn": "সুরমা হেলথকেয়ার ডায়াগনস্টিকস লিমিটেড (সিনথেটিক ডেমো)",
+        "party_address": "Zindabazar, Sylhet-3100, Bangladesh",
+        "subject_en": "Commercial Proposal for Biometric Attendance, Salary & Billing Suite",
+        "subject_bn": "বায়োমেট্রিক হাজিরা, বেতন ও বিলিং সফটওয়্যার প্রস্তাবনা",
+        "body_en": "",
+        "body_bn": "",
+        "payment_method": "50% Mobilization / 50% UAT Sign-off",
+        "currency": "BDT",
+        "discount_amount": "15000.00",
+        "tax_rate_percent": "5.00",
+        "notes_en": "Synthetic demonstration record — not a valid tax document.",
+        "notes_bn": "সিনথেটিক ডেমো নথি — কর চালান বা প্রকৃত লেনদেন নয়।",
+        "status": "issued",
+        "items": [
+          {
+            "description_en": "Bilingual Attendance, Shift & Automated Salary Sheet Engine",
+            "description_bn": "দ্বিভাষিক উপস্থিতি ও স্বয়ংক্রিয় বেতন শীট ইঞ্জিন",
+            "quantity": "1.00",
+            "unit_price": "160000.00",
+            "amount": "160000.00"
+          },
+          {
+            "description_en": "Payment Voucher, Payslip PDF Print & Encrypted Backup Module",
+            "description_bn": "পেমেন্ট ভাউচার, পে-স্লিপ প্রিন্ট ও ব্যাকআপ মডিউল",
+            "quantity": "1.00",
+            "unit_price": "85000.00",
+            "amount": "85000.00"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "doc_type": "invoice",
+        "doc_number": "INV-2026-0001",
+        "issue_date": "2026-10-04",
+        "due_date": "2026-11-03",
+        "party_name_en": "Meghna Logistics Ltd (Synthetic Demo)",
+        "party_name_bn": "মেঘনা লজিস্টিকস লিমিটেড (সিনথেটিক ডেমো)",
+        "party_address": "Banani Road 11, Dhaka-1213, Bangladesh",
+        "subject_en": "Milestone-1 Invoice: Core Accounting & Fleet Dispatch Module",
+        "subject_bn": "মাইলস্টোন-১ চালান: কোর অ্যাকাউন্টিং ও ফ্লিট ডিসপ্যাচ মডিউল",
+        "body_en": "",
+        "body_bn": "",
+        "payment_method": "Crossed Account Payee Cheque / RTGS",
+        "currency": "BDT",
+        "discount_amount": "0.00",
+        "tax_rate_percent": "0.00",
+        "notes_en": "Synthetic demonstration record — not a valid tax document.",
+        "notes_bn": "সিনথেটিক ডেমো নথি — কর চালান বা প্রকৃত লেনদেন নয়।",
+        "status": "issued",
+        "items": [
+          {
+            "description_en": "System Architecture, PostgreSQL Schema & Alembic Migration Setup",
+            "description_bn": "সিস্টেম আর্কিটেকচার, পোস্টগ্রেএসকিউএল স্কিমা ও মাইগ্রেশন সেটআপ",
+            "quantity": "1.00",
+            "unit_price": "95000.00",
+            "amount": "95000.00"
+          },
+          {
+            "description_en": "Role Permission Matrix & Double-Entry Voucher Engine",
+            "description_bn": "রোল পারমিশন ম্যাট্রিক্স ও ডাবল-এন্ট্রি ভাউচার ইঞ্জিন",
+            "quantity": "1.00",
+            "unit_price": "90000.00",
+            "amount": "90000.00"
+          }
+        ]
+      }
+    ]
+  }
+}
